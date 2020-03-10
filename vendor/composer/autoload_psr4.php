@@ -14,6 +14,7 @@ return array(
     'Psr\\Container\\' => array($vendorDir . '/psr/container/src'),
     'PhpParser\\' => array($vendorDir . '/nikic/php-parser/lib/PhpParser'),
     'PhpDocReader\\' => array($vendorDir . '/php-di/phpdoc-reader/src/PhpDocReader'),
+    'Models\\' => array($baseDir . '/app/models'),
     'League\\Plates\\' => array($vendorDir . '/league/plates/src'),
     'Kint\\' => array($vendorDir . '/kint-php/kint/src'),
     'Invoker\\' => array($vendorDir . '/php-di/invoker/src'),

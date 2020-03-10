@@ -34,7 +34,7 @@ class Router
 	    $r->addRoute('POST','/signin',              ['Controllers\UserController', 'signinHandler']);
 	    $r->addRoute('GET', '/logout',              ['Controllers\UserController', 'logout']);
 	    $r->addRoute('GET', '/verify_email',        ['Controllers\UserController', 'verify_email']);
-	    // $r->addRoute('GET', '/contacts',            ['Controllers\PostController', 'contacts']);
+	    $r->addRoute('GET', '/users',               ['Controllers\UserController', 'getUsers']);
 	    // $r->addRoute('GET', '/postcreate',          ['Controllers\PostController', 'create']);
 	    // $r->addRoute('GET', '/postshow/{id:\d+}',   ['Controllers\PostController', 'show']);
 	    // $r->addRoute('GET', '/postedit/{id:\d+}',   ['Controllers\PostController', 'edit']);

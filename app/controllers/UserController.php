@@ -5,6 +5,7 @@ namespace Controllers;
 use Delight\Auth\Auth;
 use League\Plates\Engine;
 use Tamtamchik\SimpleFlash\Flash;
+use Models\UserModel;
 // use Controllers\AppController;
 
 
@@ -112,6 +113,23 @@ class UserController extends AppController
 		catch (\Delight\Auth\TooManyRequestsException $e) {
 		    die('Too many requests');
 		}
+	}
+
+	public function getUsers()
+	{
+		$username = $this->auth->getUsername();
+		if ($username)
+		{
+			$users = new UserModel();
+			$array_users = $users->getAll('users');
+			// var_dump($users2);
+			echo $this->views->render('index.user', ['users' => $array_users, 'username' => $username]);
+		} else {
+			// echo $this->views->render('index.user', ['username' => $username]);
+			Flash::message('Вы не авторизованы! Доступ запрещен!', 'warning');
+			header('location: /');
+		}
+		
 	}
 
 }

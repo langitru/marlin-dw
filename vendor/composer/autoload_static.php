@@ -35,6 +35,10 @@ class ComposerStaticInit52abe7604be1b0a96bc3d9e2d0e1ff6a
             'PhpParser\\' => 10,
             'PhpDocReader\\' => 13,
         ),
+        'M' => 
+        array (
+            'Models\\' => 7,
+        ),
         'L' => 
         array (
             'League\\Plates\\' => 14,
@@ -104,6 +108,10 @@ class ComposerStaticInit52abe7604be1b0a96bc3d9e2d0e1ff6a
         'PhpDocReader\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-di/phpdoc-reader/src/PhpDocReader',
+        ),
+        'Models\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/models',
         ),
         'League\\Plates\\' => 
         array (
