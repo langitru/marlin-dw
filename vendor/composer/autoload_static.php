@@ -25,11 +25,19 @@ class ComposerStaticInit52abe7604be1b0a96bc3d9e2d0e1ff6a
             'Symfony\\Polyfill\\Php56\\' => 23,
             'SuperClosure\\' => 13,
         ),
+        'R' => 
+        array (
+            'RedBeanPHP\\' => 11,
+        ),
         'P' => 
         array (
             'Psr\\Container\\' => 14,
             'PhpParser\\' => 10,
             'PhpDocReader\\' => 13,
+        ),
+        'M' => 
+        array (
+            'Models\\' => 7,
         ),
         'L' => 
         array (
@@ -85,6 +93,10 @@ class ComposerStaticInit52abe7604be1b0a96bc3d9e2d0e1ff6a
         array (
             0 => __DIR__ . '/..' . '/jeremeamia/superclosure/src',
         ),
+        'RedBeanPHP\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gabordemooij/redbean/RedBeanPHP',
+        ),
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
@@ -96,6 +108,10 @@ class ComposerStaticInit52abe7604be1b0a96bc3d9e2d0e1ff6a
         'PhpDocReader\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-di/phpdoc-reader/src/PhpDocReader',
+        ),
+        'Models\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/models',
         ),
         'League\\Plates\\' => 
         array (
